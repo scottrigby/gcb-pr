@@ -52,7 +52,7 @@ func HandlePullRequest(payload interface{}, header webhooks.Header) {
 	}
 	fmt.Println(gitResp)
 
-	file := "cloudbuild.yaml"
+	file := "clonedir/cloudbuild.yaml"
 	// We mirror the name and value of GCR's built-in supported variables:
 	// - ${_PROJECT_ID}: Same as built-in $PROJECT_ID: [GCP project ID].
 	// - ${_REPO_NAME}: Same as built-in $RELEASE_NAME: [GIT_PROJECT_ACCOUNT]-[GIT_PROJECT_NAME].
